@@ -11,7 +11,7 @@ CREATE TABLE Clientes(
     PRIMARY KEY (ID)
    );
    
-CREATE TABLE Pedido(
+CREATE TABLE Pedidos(
     ID INT PRIMARY KEY AUTO_INCREMENT,
     ID_Cliente INT NOT NULL,
     Data_Pedido TIMESTAMP,
@@ -30,17 +30,17 @@ INSERT INTO Pedido(ID, ID_Cliente, Data_Pedido, Item, Valor) VALUES (null, "3", 
 
 SELECT * FROM Clientes;
 
-SELECT * FROM Pedido;
+SELECT * FROM Pedidos;
 
-UPDATE Pedido
+UPDATE Pedidos
 SET Data_Pedido = '1999-04-32 23:22:35'
 WHERE ID = 1;
 
-UPDATE Pedido
+UPDATE Pedidos
 SET Data_Pedido = '1975-06-32 22:00:35'
 WHERE ID = 2;
 
-UPDATE Pedido
+UPDATE Pedidos
 SET Data_Pedido = '2001-05-32 21:03:35'
 WHERE ID = 3;
 
