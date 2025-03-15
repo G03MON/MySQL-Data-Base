@@ -3,7 +3,7 @@ CREATE DATABASE Loja;
 USE Loja;
 
 CREATE TABLE Clientes(
-	  ID INT(4) AUTO_INCREMENT,
+    ID INT(4) AUTO_INCREMENT,
     Nome VARCHAR(150),
     Endereço VARCHAR(150),
     Cidade VARCHAR(150),
@@ -12,9 +12,9 @@ CREATE TABLE Clientes(
    );
    
 CREATE TABLE Pedido(
-	  ID INT PRIMARY KEY AUTO_INCREMENT,
+    ID INT PRIMARY KEY AUTO_INCREMENT,
     ID_Cliente INT NOT NULL,
-	  Data_Pedido TIMESTAMP,
+    Data_Pedido TIMESTAMP,
     Item VARCHAR(150),
     Valor DECIMAL(10,2) NOT NULL,
     FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID)    
