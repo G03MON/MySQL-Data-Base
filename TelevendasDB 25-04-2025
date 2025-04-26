@@ -18,7 +18,7 @@ VALUES
 (2, 'Charlos Cage', 'Telescopio', 1, 2300.33),
 (3, 'Maria B. Anthony', 'Tecpix', 1, 300.12),
 (4, 'Barbie Random', 'Mochila', 15, 1022.98),
-(5, 'Xanna C. Zehaha', 'Meia', 200, 100.98);
+(5, 'Xanna C. Zehara', 'Meia', 200, 100.98);
 
 UPDATE Televendas
 SET item_pedido = 'Megapix'
