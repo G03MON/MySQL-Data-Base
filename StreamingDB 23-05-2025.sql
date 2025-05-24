@@ -53,7 +53,7 @@ VALUES
 (555, 55, 5, '2025-05-01');
 
 -- Aplicando junção de tabelas
--- INNER JOIN
+-- INNER JOIN: lista todas as assinaturas com informações de clientes e filmes.
 
 SELECT 
 	detalhes.detalhes_id,
@@ -67,7 +67,7 @@ INNER JOIN
 RIGHT JOIN 
 	detalhes ON filmes.filme.id = clientes.cliente_id;
 
--- LEFT JOIN
+-- LEFT JOIN: lista todos os clientes e suas assinaturas, incluindo clientes que não fizeram assinaturas.
 
 SELECT
 	clientes.nome_cli,
@@ -81,7 +81,7 @@ LEFT JOIN
 LEFT JOIN
 	filmes ON detalhes.filme_id = filmes.filme_id;
 
--- RIGHT JOIN
+-- RIGHT JOIN: lista todos os filmes e as assinaturas feitas, incluindo filmes que não foram assinados.
 
 SELECT
 	filmes.filme_tt,
@@ -96,7 +96,7 @@ RIGHT JOIN
 	clientes ON detalhes.cliente_id - clientes.cliente_id;
 
     
--- FULL OUTER JOIN
+-- FULL OUTER JOIN: lista todos os clientes e filmes, incluindo aqueles que não têm assinaturas.
 
 SELECT
 	clientes.nome_cli,
@@ -110,7 +110,7 @@ FULL OUTER JOIN
 FULL OUTER JOIN 
 	filmes ON detalhes.filme_id = filmes.filme_id;
     
--- CROSS JOIN
+-- CROSS JOIN: lista todas as combinações possíveis de clientes e filmes.
 
 SELECT
 	clientes.nome_cli,
